@@ -1,0 +1,26 @@
+[
+  {
+    "name": "01-filter-section-order.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/01-filter-section-order.jpg"
+  },
+  {
+    "name": "02-has-ingredient-blueberry-typeahead.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/02-has-ingredient-blueberry-typeahead.jpg"
+  },
+  {
+    "name": "03-blueberry-filter-applied-with-results.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/03-blueberry-filter-applied-with-results.jpg"
+  },
+  {
+    "name": "04-doesnt-have-wheat-typeahead.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/04-doesnt-have-wheat-typeahead.jpg"
+  },
+  {
+    "name": "05-doesnt-have-wheat-flour-applied-results.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/05-doesnt-have-wheat-flour-applied-results.jpg"
+  },
+  {
+    "name": "06-brand-page-filter-sections-order.jpg",
+    "url": "https://airgoods-bucket.s3.amazonaws.com/uploads/original/admin_uploads/qa-pr-1270/06-brand-page-filter-sections-order.jpg"
+  }
+]

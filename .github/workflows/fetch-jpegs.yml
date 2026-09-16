@@ -1,0 +1,36 @@
+name: Fetch QA JPEG screenshots
+on:
+  push:
+    paths:
+      - "jpeg-sources.json"
+      - ".github/workflows/fetch-jpegs.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download JPEGs from public sources and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -c '
+          import json, urllib.request
+          for item in json.load(open("jpeg-sources.json")):
+              name, url = item["name"], item["url"]
+              data = urllib.request.urlopen(url).read()
+              assert data[:3] == b"\xff\xd8\xff", (name, data[:3].hex())
+              open(name, "wb").write(data)
+              print("wrote", name, len(data), data[:3].hex())
+          '
+          git config user.name "gabeliss"
+          git config user.email "59855731+gabeliss@users.noreply.github.com"
+          git add *.jpg
+          if git diff --cached --quiet; then
+            echo "No JPEG changes"
+            exit 0
+          fi
+          git commit -m "Add PR #1270 QA JPEG screenshots"
+          git push
