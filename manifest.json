@@ -1,0 +1,66 @@
+[
+  {
+    "jpg": "01-filter-section-order.jpg",
+    "bytes": 37551,
+    "parts": [
+      "01-filter-section-order.jpg.b64.00",
+      "01-filter-section-order.jpg.b64.01",
+      "01-filter-section-order.jpg.b64.02",
+      "01-filter-section-order.jpg.b64.03",
+      "01-filter-section-order.jpg.b64.04",
+      "01-filter-section-order.jpg.b64.05",
+      "01-filter-section-order.jpg.b64.06"
+    ]
+  },
+  {
+    "jpg": "02-has-ingredient-blueberry-typeahead.jpg",
+    "bytes": 37600,
+    "parts": [
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.00",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.01",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.02",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.03",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.04",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.05",
+      "02-has-ingredient-blueberry-typeahead.jpg.b64.06"
+    ]
+  },
+  {
+    "jpg": "03-blueberry-filter-applied-with-results.jpg",
+    "bytes": 15789,
+    "parts": [
+      "03-blueberry-filter-applied-with-results.jpg.b64.00",
+      "03-blueberry-filter-applied-with-results.jpg.b64.01",
+      "03-blueberry-filter-applied-with-results.jpg.b64.02"
+    ]
+  },
+  {
+    "jpg": "04-doesnt-have-wheat-typeahead.jpg",
+    "bytes": 28189,
+    "parts": [
+      "04-doesnt-have-wheat-typeahead.jpg.b64.00",
+      "04-doesnt-have-wheat-typeahead.jpg.b64.01",
+      "04-doesnt-have-wheat-typeahead.jpg.b64.02",
+      "04-doesnt-have-wheat-typeahead.jpg.b64.03",
+      "04-doesnt-have-wheat-typeahead.jpg.b64.04"
+    ]
+  },
+  {
+    "jpg": "05-doesnt-have-wheat-flour-applied-results.jpg",
+    "bytes": 17084,
+    "parts": [
+      "05-doesnt-have-wheat-flour-applied-results.jpg.b64.00",
+      "05-doesnt-have-wheat-flour-applied-results.jpg.b64.01",
+      "05-doesnt-have-wheat-flour-applied-results.jpg.b64.02"
+    ]
+  },
+  {
+    "jpg": "06-brand-page-filter-sections-order.jpg",
+    "bytes": 15776,
+    "parts": [
+      "06-brand-page-filter-sections-order.jpg.b64.00",
+      "06-brand-page-filter-sections-order.jpg.b64.01",
+      "06-brand-page-filter-sections-order.jpg.b64.02"
+    ]
+  }
+]

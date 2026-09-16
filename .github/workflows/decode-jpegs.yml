@@ -1,0 +1,40 @@
+name: Decode QA JPEG screenshots
+on:
+  push:
+    paths:
+      - "*.jpg.b64.*"
+      - "manifest.json"
+      - ".github/workflows/decode-jpegs.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode base64 parts to JPEG and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -c '
+          import json, base64
+          manifest = json.load(open("manifest.json"))
+          for item in manifest:
+              parts = sorted(item["parts"])
+              b64 = "".join(open(p).read().strip() for p in parts)
+              data = base64.b64decode(b64)
+              assert data[:3] == b"\xff\xd8\xff", (item["jpg"], data[:3].hex())
+              assert len(data) == item["bytes"], (item["jpg"], len(data), item["bytes"])
+              open(item["jpg"], "wb").write(data)
+              print("wrote", item["jpg"], len(data))
+          '
+          git config user.name "gabeliss"
+          git config user.email "59855731+gabeliss@users.noreply.github.com"
+          git add *.jpg
+          if git diff --cached --quiet; then
+            echo "No JPEG changes"
+            exit 0
+          fi
+          git commit -m "Add decoded PR #1270 QA JPEG screenshots"
+          git push
